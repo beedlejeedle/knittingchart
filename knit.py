@@ -116,10 +116,6 @@ def chart(first_inst, total_st = 10):
     # Instructions in progress, add the next and connecting Instructions after one is finished
     instr_in_pr = [curr_inst]
     while len(instr_in_pr) != 0:
-        #for item in instr_in_pr:
-          #  print(item, item.dec_alt, item.num_repeat, end = " ")
-        #print()
-
         curr_row = ['PAT'] * total_st
         for instr in instr_in_pr:
             # for decreasing on alternate rows
@@ -156,7 +152,6 @@ def chart(first_inst, total_st = 10):
 
             # append the row to the chart
             stchart.append(curr_row)
-
 
             # if the repeats are finished, remove the Instruction
             # and add the next Instruction and any connected Instructions
